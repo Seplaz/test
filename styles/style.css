@@ -1,0 +1,157 @@
+/* место для вашего кода */
+
+page {
+  color: #000;
+  font-family: Raleway, sans-serif;
+  background-color: #fff;
+}
+
+/* Стили хедера */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 90px 50px 95px;
+  font-size: 18px;
+}
+
+.header__menu {
+  justify-self: start;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 30px;
+}
+
+.header__links-list-item {
+  padding-left: 3px;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  padding-left: 0;
+  list-style: none;
+}
+
+.header__link {
+  text-underline-offset: 4px;
+}
+
+.header__link:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__link_active:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__logo-image {
+  width: 148px;
+  height: 105px;
+}
+
+.address {
+  justify-self: end;
+  max-width: 240px;
+  font-style: normal;
+  line-height: 24.3px;
+}
+
+/* Стили основого блока */
+
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 106px;
+  padding: 165px 50px 50px;
+  background-image: url(/images/cover.jpg);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__title {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  line-height: 115px;
+}
+
+.aligned-text_center {
+  align-self: center;
+}
+
+.aligned-text_right {
+  align-self: end;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 30px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 18px;
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 25.83px;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.lots {
+  padding: 0 24px;
+}
+
+/* Стили футера */
+
+.footer {
+  padding: 0 50px 82px 50px;
+}
